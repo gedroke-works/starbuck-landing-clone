@@ -1,7 +1,8 @@
 html{
-    box-sizing: border-box;
     font-size: 10px;
-    
+}
+* {
+    box-sizing: border-box;
 }
 body{
     font-size: 1.6rem;
@@ -18,7 +19,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.button {
+.cta {
     /*Common settings on button on this page*/ 
     display: inline-block;
     background: none;
@@ -79,6 +80,8 @@ header {
     height: 100%;
     display: flex !important;
     align-items: center !important;
+
+    padding-left: 10px;
 }
 .left-navigation ul {
     /*Disable the default style of the list*/
@@ -118,6 +121,8 @@ header {
     display: flex !important;
     align-items: center !important;
     margin-left: 4rem !important;
+
+    padding-right: 10px;
     
 }
 .right-navigation ul {
@@ -192,31 +197,278 @@ header {
     line-height: 1.75;
     font-size: 19px;
     color: #000000;
+
+    padding-top: 3.2rem;
+    padding-bottom:3.2rem;
 }
 .left-right-section {
     /*This will flex both the image and text container*/
     display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-
     background-color: #ebdbc8;
+    margin-bottom: 3.2rem;
+    
 
 }
 .left-right-section .image {
     /*This will set the width of the text container to half of the section*/
-    width: 50%; 
-    /*Might change to make a variable height scaling*/
-    height: 420px;
+    width:50%;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
 }
 .left-right-section .image img {
-    height: 100%;
+    width: 100%;
+    border:0;
 }
 .left-right-section .text {
     /*Same here, will set the width of the text container to half of the section*/
     width: 50%;
-
+    color: #1e3932;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+    padding: 32px 48px;
+
+
 }
+.text h1, .text h3 { 
+    margin:0;
+    max-width: 83%;
+    
+}
+.text h1 {
+    margin-bottom: 24px;
+    letter-spacing: 8px;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 600 !important;
+    text-align: center;
+}
+.text h3 {
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 400 !important;
+    text-align: center;
+}
+.text .cta {
+    color: #1e3932;
+}
+.text .cta:hover {
+    background-color:rgba(30,57,50,.1);
+    outline:0;
+    text-decoration: none;
+    color:#1e3932;
+    cursor: pointer;
+
+    /*Basic effect when hovering the cta*/
+    padding: 7px 32px;
+
+}
+.burger {
+    background-color: #1e3932;
+}
+.burger .text {
+    
+    color:#ffffff;
+}
+.burger .text .cta {
+    color:#ffffff;
+
+}
+.burger .text .cta:hover {
+    cursor: pointer;
+    outline: 0;
+    background-color: hsla(0,0%,100%,.12);
+    color: #fff
+    
+}
+section {
+    display: flex;
+    margin-bottom:32px;
+}
+
+.top-bottom-section {
+    width:50%;
+    display:flex;
+    
+    
+}
+.section-container {
+    display:flex;
+    flex-direction: column;
+    background-color: #d4e9e2;
+    
+    
+}
+.top-bottom-section:first-child .section-container{
+    margin-right:16px;
+}
+.top-bottom-section:last-child .section-container{
+    margin-left:16px;
+    display:flex;
+}
+
+.top-bottom-section .image {
+    width: 100%;
+    display:flex;
+    border:3px solid darkgreen;
+
+}
+
+.top-bottom-section .image img {
+    width: 100%;
+}
+.top-bottom-section .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left:24px;
+    padding-right:24px;
+    padding-bottom: 32px;
+    padding-top: 12px;
+    color:#1e3932;
+    
+    
+    
+}
+.top-bottom-section .cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bottom-section .text h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom:24px;
+}
+.top-bottom-section .text .h3 {
+    font-size: 19px;
+    line-height: 1.75;
+}
+
+.community, .fighting-hunger {
+    background-color:#d4e9e2;
+}
+
+.community .text, .fighting-hunger .text{
+    color:#1e3932;
+}
+.community .text h1, .fighting-hunger .text h1 {
+    font-size:24px;
+    font-weight: 600 !important;
+    margin-bottom: 24px;
+}
+.community .text h3, .fighting-hunger .text h3 {
+    font-size:19px;
+}
+.pickup {
+    background-color:#f2f0eb;
+}
+.pickup .text h1 {
+    font-size:24px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+}
+.pickup .text h3 {
+    font-size: 19px;
+}
+
+.donation-text-section {
+    background-color:#ffffff;
+    margin:0;
+   
+}
+.donation-text-section .donation-text {
+    width:100%;
+}
+.donation-text-section .donation-text {
+    padding-top:3.2rem;
+    padding-bottom:3.2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+
+}
+.donation-text-section .donation-text .content {
+    max-width:60%;
+    font-weight:500;
+    padding-left:24px;
+    padding-right:24px;
+}
+footer {
+    box-shadow: 0 -1px 3px rgba(0,0,0,.1),0 -2px 2px rgba(0,0,0,.06),0 0 2px rgba(0,0,0,.07);
+    position:relative;
+
+    padding-top:2.4rem;
+    padding-bottom:2.4rem;
+    display:block;
+}
+.footer-section {
+    padding-left:4rem;
+    padding-right:4rem;
+    display:flex;
+}
+.footer-column {
+    width:190px;
+    max-width:190px;
+    margin-left:32px;
+    display:inline-block !important;
+}
+.footer-column:first-child {
+    margin:0;
+}
+.footer-column h3 {
+    font-size:1.9rem;
+    margin:0;
+    margin-bottom:2.4rem;
+    font-weight:400;
+}
+.footer-column ul {
+    display:inline-block;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    font-size:1.6rem;
+    list-style: none;
+}
+
+.footer-column ul li {
+    color:rgba(0,0,0,.56);
+    text-decoration: none !important;
+    padding-top:.8rem;
+    padding-bottom:.8rem;
+    margin-bottom:.8rem;
+    display:block;
+    background-color:transparent;
+
+}
+.footer-column ul li a {
+    text-decoration:none;
+}
+.footer-column ul li a:hover {
+    color:rgba(0,0,0,.87);
+    outline:0;
+    cursor: pointer;
+}
+.footer-line {
+    border:0;
+    margin:0 3.2rem;
+    padding-top:3.2rem;
+    padding-bottom:3.2rem;
+    border-top:2px solid rgba(0,0,0,.1);
+    display:block;
+}
+.social-media-list {
+    
+}
+
+
+
+
+ 
