@@ -4,7 +4,7 @@ Vanilla HTML/CSS Starbuck landing page clone
 This project use only HTML/CSS and Javascript. The goal here is to master fundamentals aspects of the 3 languages.
 The way I made this to assure that I can reproduce the same process to build more landing pages.
 
-Technologie use: 
+Technologies used: 
   * HTML
   * CSS
 
@@ -13,7 +13,7 @@ Tools:
   * VsCode
   * Pen and Paper (the most important tool you can use to build anything).
 
-Here was the process:
+Building process:
   * Destructuration of the page in "boxes". This dicdate how I will structure my HTML code. 
   * List up all frontend functionalities I might add in the project.
   * Start making navigation bar.
